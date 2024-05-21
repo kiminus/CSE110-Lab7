@@ -146,7 +146,9 @@ class RecipeCard extends HTMLElement {
     const rating_span = document.createElement('span');
     rating_span.innerText = data.rating;
     const rating_img = document.createElement('img');
-    rating_img.src = `/assets/images/icons/${Number(data.rating)}-star.svg`;
+    rating_img.src = `https://kiminus.github.io/CSE110-Lab7/assets/images/icons/${Number(
+      data.rating
+    )}-star.svg`;
     rating_img.alt = `${data.rating} star(s)`;
     const rating_span2 = document.createElement('span');
     rating_span2.innerText = `(${data.numRatings})`;
